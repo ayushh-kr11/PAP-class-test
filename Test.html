@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <style>
+    .flex {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+    .item {
+      background-color: lightblue;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .flex1 {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+    }
+    .item1 {
+      background-color: lightpink;
+      padding: 10px;
+      margin: 5px;
+    }
+    
+    .A{
+      justify-content: flex-start;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+    }
+
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+    }
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      width: 100px;
+      height: 100px;
+      background-color: lightpink;
+    }
+
+    .box1, .box2, .box3 {
+      width: 100px;
+      height: 100px; 
+      margin: 10px; 
+    }
+    .box1 {
+      background-color: lightpink;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+    }
+    .box2 {
+      background-color: lightblue;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .r{
+      border: 2px solid black;
+      padding:20px;
+      margin: 20px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+
+
+
+
+
+  <p>
+    <span style="font-weight: bold;">Q1.Ans - </span> 
+    We use row and column while using 'flex-direction' property in css. It will tell which way our element is going to be, if it is in horizontal or vertical and it all depend on our 'flex-direction' property.
+    <br><br>
+
+    <span style="font-weight: bold;">Example</span>
+  </p>
+
+  <div class="flex">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+  </div>
+  
+  <div class="flex1">
+    <div class="item1">Item 1</div>
+    <div class="item1">Item 2</div>
+  </div>
+
+
+  <p>
+    <span style="font-weight: bold;">Q2.Ans - <br>
+    Inline style -</span> 
+    In this we can style our element using 'style' attribute inside the tag.
+
+    <span style="font-weight: bold;">Example :</span> The style attribute we are using inside above span tag is the example of inline stylesheet
+    <br><br>
+
+    <span style="font-weight: bold;">Internal stylesheet - </span> 
+    In this we can style our elements using 'style tag' which will be inside head tag and from there we can target each element.
+
+  </p>
+
+<p>    
+  <span style="font-weight: bold;">External stylesheet - 
+  </span> 
+  In this we create separate file wuith .css extension in it and link it with our required html file. from that css file we can target/styles element that is in html file.
+</p>
+
+<p>
+  <span style="font-weight: bold;">Q3.Ans - </span> 
+    Justify content will align and seprate space between flex item in horizontal (by default) and in vertical if we've already set its direction vertical using 'flex-attribute - '
+
+</p>
+
+<span style="font-weight: bold;">Example  - </span>
+<div class="A" style="justify-content:center;">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>
+
+
+<p>
+  <span style="font-weight: bold;">Q4.Ans - </span> <br>
+  <span style="font-weight: bold;">Absolute positioning : </span>
+  The element which is in absolute position, it will adjust it's position relative to it's parent and if no element is present, the body is used as it's parent.
+</p>
+
+<p>
+  <span style="font-weight: bold;">Relative positioning : </span>
+  In relative position the element will be allowed to adjusted from its normal position.It moves only from its original location and other element on the page will not fil the gap left by the moved element.
+</p>
+<span style="font-weight: bold;">Example: <br><br> Relative positioning</span>
+
+<div class="relative-box">Relative Box</div> <br><br>
+
+<span style="font-weight: bold;">Absolute positioning<br><br></span>
+
+<div class="container">
+  <div class="absolute-box">Absolute Box</div>
+</div>
+
+<p>
+  <span style="font-weight: bold;">Q5.Ans - </span>
+  z-index property in css will tell you about the stack order of the element.The element with the greater value will always be infront of the element with the lower value.
+</p>
+
+<span style="font-weight: bold;">Example:</span>
+<div class="box1">Box 1</div>
+<div class="box2">Box 2</div>
+
+<br>
+
+<p style="margin-top: 120px;">
+  <span style="font-weight: bold;">Q6.Ans:<br><br>Padding - </span>
+  Padding is the space between the content of the element and its border.It creates space inside the element, pushing the content away from the edge.<br><br>
+
+  <span style="font-weight: bold;">Margin -</span>
+  Margin is space outside the border of the element.It create the space between elements, helping them to stay away from each other.
+</p>
+<span style="font-weight: bold;">Example:</span><br>
+
+<div class="r">
+  Content.
+</div>
+
+
+</body>
+</html>
